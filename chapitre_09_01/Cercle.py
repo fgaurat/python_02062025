@@ -1,0 +1,18 @@
+from ICalcGeo import ICalcGeo
+
+class Cercle(ICalcGeo):
+    
+    def __init__(self, rayon):
+        super().__init__(rayon, rayon)
+        self.__rayon = rayon
+
+    @property
+    def rayon(self):
+        return self.__rayon
+
+    @rayon.setter
+    def rayon(self,rayon):
+        self.__rayon = rayon
+    
+    def __str__(self):
+        return f"{__class__.__name__} {self.__rayon=}"
