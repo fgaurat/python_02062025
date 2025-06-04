@@ -1,9 +1,8 @@
 from ICalcGeo import ICalcGeo
-
+import math
 class Cercle(ICalcGeo):
     
     def __init__(self, rayon):
-        super().__init__(rayon, rayon)
         self.__rayon = rayon
 
     @property
@@ -16,3 +15,4 @@ class Cercle(ICalcGeo):
     
     def __str__(self):
         return f"{__class__.__name__} {self.__rayon=}"
+
