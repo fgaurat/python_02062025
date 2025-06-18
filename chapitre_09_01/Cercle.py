@@ -16,3 +16,9 @@ class Cercle(ICalcGeo):
     def __str__(self):
         return f"{__class__.__name__} {self.__rayon=}"
 
+    @property
+    def surface(self):
+        # import math
+        return math.pi*self.__rayon**2
+
+
